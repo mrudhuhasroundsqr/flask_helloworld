@@ -7,7 +7,7 @@ app.config['Debug'] = True
 @app.route('/helloworld', methods=['GET', 'POST'])
 def getAnn():
     if request.method == 'POST':
-        return jsonify({"success": "Hello world"})
+        return jsonify({"success": "Hello world..App running"})
     else:
         return jsonify({"success": "method not allowed"})
 
